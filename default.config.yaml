@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./.kokimoki/schema.json
 
 # Translations
-title: 'Host Starter'
+title: 'Everybody on board'
 
 gameLobbyMd: |
   # Waiting for game to start...
@@ -29,6 +29,41 @@ playerNamePlaceholder: 'Your name...'
 playerNameLabel: 'Name:'
 playerNameButton: 'Continue'
 
+playerWeightTitle: 'Enter Your Weight'
+playerWeightPlaceholder: 'Weight in kg...'
+playerWeightLabel: 'Weight:'
+playerCountdownTitle: 'You are about to drop'
+playerCountdownDescriptionMd: |
+  # Deployment countdown
+  Watch the timer to know when you will drop onto the beam.
+playerQueuePositionLabel: 'Queue position'
+playerWaitingForHostLabel: 'Waiting for the host to start'
+playerBeamActiveHint: 'Tilt is shared by everyone - keep it balanced!'
+playerBeamStableLabel: 'Beam stable'
+playerStableThresholdDegrees: 15
+
+playerBeamLockedHint: 'You will gain control once deployed.'
+playerCurrentPositionLabel: 'Current position'
+balanceWarningAngle: 12
+balanceWarningTitle: 'Beam unstable'
+balanceWarningDescription: 'The beam is tilting too far. Spread out to regain balance.'
+
+hostControlsTitle: 'Balance Controls'
+hostDeploymentIntervalLabel: 'Deployment interval (seconds)'
+hostPhysicsSpeedLabel: 'Physics speed multiplier'
+hostNextPlayerLabel: 'Next player'
+hostNextDropLabel: 'Next drop in'
+hostTotalDeployedLabel: 'Players deployed'
+noQueuedPlayerLabel: 'No player queued'
+
+presenterNextDropLabel: 'Next drop in'
+presenterNextPlayerLabel: 'Next player'
+presenterDeployedLabel: 'Deployed players'
+
+playerBeamTitle: 'Balance Beam'
+playerMoveLeftLabel: 'Move left'
+playerMoveRightLabel: 'Move right'
+
 hostLabel: 'Host'
 presenterLabel: 'Presenter'
 
@@ -37,3 +72,46 @@ playerLinkLabel: 'Player Link'
 presenterLinkLabel: 'Presenter Link'
 
 menuAriaLabel: 'Open menu drawer'
+
+assignmentsTitle: 'Team Assignments'
+assignmentsWaitingForDeploymentLabel: 'Assignments begin once everyone is on the beam.'
+assignmentNoActiveLabel: 'Assignments complete'
+assignmentCurrentTaskLabel: 'Current Assignment'
+assignmentStatusLockedLabel: 'Locked'
+assignmentStatusActiveLabel: 'Active'
+assignmentStatusCompletedLabel: 'Completed'
+assignmentDurationLabel: 'Duration'
+assignmentHoldHint: 'Hold steady within +/-{degrees} degrees for {seconds}s.'
+assignmentBalanceToleranceDegrees: 5
+assignmentBalanceHoldSeconds: 10
+assignmentCenterZoneLabel: 'Center third'
+
+assignmentBalanceTitle: 'Balance the beam'
+assignmentBalanceDescriptionMd: |
+  # Stabilize the beam
+  Hold the beam near zero for at least 10 seconds.
+
+assignmentSpreadTitle: 'Clear the center third'
+assignmentSpreadDescriptionMd: |
+  # Move everyone outward
+  Each player must leave the center third of the beam, then balance together.
+
+assignmentSwapTitle: 'Switch sides'
+assignmentSwapDescriptionMd: |
+  # Swap positions
+  Every player crosses to the opposite side, then balance the beam.
+
+assignmentTurn360Title: 'Full rotation'
+assignmentTurn360DescriptionMd: |
+  # 360° spin
+  Rotate the beam one full turn in any direction, then stabilize at zero.
+
+assignmentTouch90Title: 'Touch the bottom'
+assignmentTouch90DescriptionMd: |
+  # Hit 90°
+  Tilt to at least 90° once, then return to balance for 10 seconds.
+
+assignmentTurn720Title: 'Double rotation'
+assignmentTurn720DescriptionMd: |
+  # Two complete turns
+  Spin the beam twice before leveling out together.

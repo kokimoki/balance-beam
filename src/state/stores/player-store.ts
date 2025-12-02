@@ -1,13 +1,21 @@
 import { kmClient } from '@/services/km-client';
 
+export type PlayerView = 'lobby' | 'countdown' | 'beam' | 'connections';
+
 export interface PlayerState {
 	name: string;
-	currentView: 'lobby' | 'shared-state' | 'connections';
+	weight: number;
+	currentView: PlayerView;
+	pendingDeploymentTimestamp: number;
+	lastKnownPosition: number;
 }
 
 const initialState: PlayerState = {
 	name: '',
-	currentView: 'lobby'
+	weight: 0,
+	currentView: 'lobby',
+	pendingDeploymentTimestamp: 0,
+	lastKnownPosition: 0
 };
 
 export const playerStore = kmClient.localStore<PlayerState>(

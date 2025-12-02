@@ -5,6 +5,7 @@ import { generateLink } from '@/kit/generate-link';
 import { HostPresenterLayout } from '@/layouts/host-presenter';
 import { kmClient } from '@/services/km-client';
 import { ConnectionsView } from '@/views/connections-view';
+import { SharedStateView } from '@/views/shared-state-view';
 import { KmQrCode } from '@kokimoki/shared';
 import * as React from 'react';
 
@@ -45,6 +46,7 @@ const App: React.FC = () => {
 					</div>
 				</div>
 
+				<SharedStateView />
 				<ConnectionsView />
 			</HostPresenterLayout.Main>
 		</HostPresenterLayout.Root>
