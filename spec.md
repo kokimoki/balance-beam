@@ -11,7 +11,7 @@
 - **Player**: Enters name and weight, sees a personal countdown until deployment, then controls their avatar on the beam with left/right inputs even if dropped while temporarily offline.
 
 ## Player Lifecycle
-1. Join lobby → enter name + weight.
+1. Join lobby → enter name + weight (weight chosen via a slider limited to 25–125 kg in 5 kg increments).
 2. Added to deployment queue immediately (late joins appended to end).
 3. Lobby shows personal countdown with deployment timestamp derived from global interval.
 4. When countdown completes, player is deployed at a random beam position even if client is offline; if offline, avatar still appears using stored data.
@@ -60,6 +60,7 @@
 - **Presenter View**: Renders beam visualization, shows `nextPlayerName`, timer until drop, deployed counter, and game timer.
 - **Player View**:
   - Lobby: profile form.
+  - Lobby weight control uses a slider constrained to 25–125 kg with 5 kg steps so mobile users can drag rather than type.
   - Countdown: card with "You drop in Xs" plus beam preview of just themselves until deployment.
   - Beam: live beam component with controls (buttons or gestures) to move left/right, plus indicator of beam tilt. The player beam should always display that player's weight next to their name so they can verify the profile entry.
 - **Circular visualization**: Presenter and player beam views must render a full circular dial with major/minor angle markers (e.g., every 30°) so spectators can see complete rotations without overlapping surrounding text. The dial should contain the beam bar, rotation ticks, and labels within a fixed square area so adjacent copy remains readable.

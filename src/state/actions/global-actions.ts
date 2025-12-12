@@ -15,7 +15,7 @@ import type { GlobalState } from '../stores/global-store';
 const MIN_INTERVAL_MS = 3000;
 const MAX_INTERVAL_MS = 60000;
 const MIN_PHYSICS_MULTIPLIER = 0.25;
-const MAX_PHYSICS_MULTIPLIER = 2;
+const MAX_PHYSICS_MULTIPLIER = 3;
 const MIN_EFFECTIVE_INERTIA = 25;
 const ANGULAR_DAMPING_PER_SECOND = 0.12; // light friction to prevent runaway spinning
 
